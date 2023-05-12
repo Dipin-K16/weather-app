@@ -3,6 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { DropdownModule } from 'primeng/dropdown';
+import { FormsModule } from '@angular/forms';
+import { CardModule } from 'primeng/card';
+// import {GMapModule} from 'primeng/gmap';
+
+
 
 @NgModule({
   declarations: [
@@ -10,7 +18,13 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    DropdownModule,
+    FormsModule,
+    CardModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
